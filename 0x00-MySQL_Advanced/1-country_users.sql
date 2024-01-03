@@ -1,5 +1,5 @@
 -- creates a table users if it doesn't already exist
-
+DROP TABLE IF EXISTS users;
 CREATE TABLE users(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     email VARCHAR(255) UNIQUE NOT NULL,
