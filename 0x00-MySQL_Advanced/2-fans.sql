@@ -2,4 +2,4 @@
 
 SELECT origin, fans
 FROM metal_bands
-ORDER BY fans;
+ORDER BY fans DESC;
