@@ -6,7 +6,7 @@ DROP FUNCTION IF EXISTS SafeDiv;
 CREATE FUNCTION SafeDiv(a INT, b INT)
 RETURNS INT
 BEGIN
-    DECLARE answer INT;
+    DECLARE answer DECIMAL;
     IF b <> 0 THEN
         SET answer =  a / b;
     ELSE
