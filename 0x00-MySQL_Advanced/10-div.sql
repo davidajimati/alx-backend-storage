@@ -11,7 +11,7 @@ BEGIN
         SET answer =  a / b;
     ELSE
         SET answer = 0;
-    END IF
+    END IF;
         RETURN answer;
 END;
 //
