@@ -4,9 +4,9 @@
 DELIMITER //
 DROP FUNCTION IF EXISTS SafeDiv;
 CREATE FUNCTION SafeDiv(a INT, b INT)
-RETURNS INT
+RETURNS FLOAT
 BEGIN
-    DECLARE answer DECIMAL;
+    DECLARE answer FLOAT;
     IF b <> 0 THEN
         SET answer =  a / b;
     ELSE
