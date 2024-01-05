@@ -1,11 +1,11 @@
--- script that creates a stored procedure ComputeAverageScoreForUser that computes and store the average score for a student.
+-- script that creates a stored procedure ComputeAverageScoreForUser that computes and stores the average score for a student.
 -- The average score can be a decimal
 
 DELIMITER //
 
 DROP PROCEDURE IF EXISTS ComputeAverageScoreForUser;
 
-CREATE PROCEDURE ComputeAverageScoreForUser(IN u_id INT);
+CREATE PROCEDURE ComputeAverageScoreForUser(IN u_id INT)
 BEGIN
     DECLARE computed_avg DECIMAL(10, 2);
 
